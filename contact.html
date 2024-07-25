@@ -1,0 +1,153 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chef's Place | Contact</title>
+
+    <link rel="icon" type="image/x-icon" href="/images/logo.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/3618d78403.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main style="padding-top: 5rem">
+      <header>
+        <img src="./images/logo.png" alt="logo" />
+        <nav id="nav">
+          <i class="fa-solid fa-xmark" id="cancel-icon"></i>
+          <a href="/index.html">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/menu.html">Menu</a>
+          <a href="/products.html">Products</a>
+          <a href="/review.html">Review</a>
+          <a href="#">Contact</a>
+          <a href="/blogs.html">Blogs</a>
+        </nav>
+        <input type="text" placeholder="search" id="search-input" />
+        <div class="shoping-content" id="shoping">
+          <div class="shop-card">
+            <i class="fa-solid fa-xmark"></i>
+            <img src="images/menu-1.png" alt="menu-1" />
+            <div class="shop-info">
+              <h4>Cart Item 01</h4>
+              <span>$15.99/-</span>
+            </div>
+          </div>
+          <div class="shop-card">
+            <i class="fa-solid fa-xmark"></i>
+            <img src="images/menu-2.png" alt="menu-2" />
+            <div class="shop-info">
+              <h4>Cart Item 02</h4>
+              <span>$15.99/-</span>
+            </div>
+          </div>
+          <div class="shop-card">
+            <i class="fa-solid fa-xmark"></i>
+            <img src="images/menu-3.png" alt="menu-3" />
+            <div class="shop-info">
+              <h4>Cart Item 03</h4>
+              <span>$15.99/-</span>
+            </div>
+          </div>
+          <div class="shop-card">
+            <i class="fa-solid fa-xmark"></i>
+            <img src="images/menu-4.png" alt="menu-4" />
+            <div class="shop-info">
+              <h4>Cart Item 03</h4>
+              <span>$15.99/-</span>
+            </div>
+          </div>
+
+          <button class="black-btn check">Checkout Now</button>
+        </div>
+        <div class="header-settings">
+          <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+          <i class="fa-solid fa-cart-shopping" id="shop-icon"></i>
+          <i class="fa-solid fa-bars" id="hamburger-icon"></i>
+        </div>
+      </header>
+
+      <div class="pages-wrapper">
+        <h2><span>CONTACT</span> US</h2>
+        <div class="pages-content" id="contact-us">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12037.85231519091!2d28.9747919602994!3d41.03700129154035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7650656bd63%3A0x8ca058b28c20b6c3!2zVGFrc2ltIE1leWRhbsSxLCDFnmVoaXQgTXVodGFyLCAzNDQzNSBCZXlvxJ9sdS_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1721751651640!5m2!1str!2str"
+            width="50%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="contact-settings">
+            <h2>GET IN TOUCH</h2>
+            <div class="name-content">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" placeholder="name" />
+            </div>
+            <div class="name-content">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" placeholder="email" />
+            </div>
+            <div class="name-content">
+              <i class="fa-solid fa-phone"></i>
+              <input type="tel" placeholder="phone number" />
+            </div>
+
+            <button class="black-btn">Contact Now</button>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="pages-wrapper">
+          <h3>Our Social Links</h3>
+          <div class="social-media-links">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+          <p>Created By FlyCode00 | All Rigths Reserved</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+
+  <script>
+    let searching = document.querySelector("#search-icon");
+    let shoping = document.querySelector("#shop-icon");
+    let hamburger = document.querySelector("#hamburger-icon");
+    let cancel = document.querySelector("#cancel-icon");
+
+    let searchdiv = document.querySelector("#search-input");
+    let shopdiv = document.querySelector("#shoping");
+    let navdiv = document.querySelector("#nav");
+
+    document.querySelector("body").addEventListener("click", function (e) {
+      if (e.target.id !== "search-icon" && e.target.id !== "search-input") {
+        searchdiv.classList.remove("active");
+      }
+      if (e.target.id !== "shop-icon" && e.target.id !== "shoping") {
+        shopdiv.classList.remove("active-nav");
+      }
+      if (e.target.id !== "hamburger-icon" && e.target.id !== "nav") {
+        navdiv.classList.remove("active-nav");
+      }
+    });
+    searching.addEventListener("click", function () {
+      searchdiv.classList.toggle("active");
+    });
+    shoping.addEventListener("click", function () {
+      shopdiv.classList.toggle("active-nav");
+    });
+    hamburger.addEventListener("click", function () {
+      navdiv.classList.toggle("active-nav");
+    });
+    cancel.addEventListener("click", function () {
+      navdiv.classList.toggle("active-nav");
+    });
+  </script>
+</html>
