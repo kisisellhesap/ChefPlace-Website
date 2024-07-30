@@ -43,7 +43,7 @@ main {
 
 header {
   background-color: white;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-around;
   width: 85%;
