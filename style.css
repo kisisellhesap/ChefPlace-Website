@@ -641,9 +641,9 @@ footer p {
   }
 
   .pages-wrapper {
-    width: 85%;
+    width: 100%;
     min-width: 320px;
-    display:none !important;
+ 
   }
 
   #hamburger-icon,
