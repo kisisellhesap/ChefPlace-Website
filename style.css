@@ -683,6 +683,7 @@ footer p {
   .home-wrapper,
   .pages-wrapper {
     width: 100%;
+    min-width:auto;
     align-items: center;
   }
 
