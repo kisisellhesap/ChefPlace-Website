@@ -684,6 +684,7 @@ footer p {
   .pages-wrapper {
     width: 100%;
     min-width:auto;
+    background-color:yellow;
     align-items: center;
   }
 
