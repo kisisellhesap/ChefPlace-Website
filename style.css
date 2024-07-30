@@ -636,12 +636,12 @@ footer p {
   }
 
   .home-wrapper {
-    width: 85%;
+    width: 100%;
     min-width: 320px;
   }
 
   .pages-wrapper {
-    width: 85%;
+    width: 100%;
     min-width: 320px;
  background-color:red !important;
   }
