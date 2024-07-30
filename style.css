@@ -682,8 +682,8 @@ footer p {
 
   .home-wrapper,
   .pages-wrapper {
-    width: 100%;
-    min-width:auto;
+    width: 100% !important;
+    min-width:auto !important; 
     background-color:yellow !important;
     align-items: center;
   }
